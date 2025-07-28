@@ -3,10 +3,9 @@ from langchain_community.tools import DuckDuckGoSearchRun
 from datetime import datetime
 import textwrap
 
-# Initialize search tool
+
 search_tool = DuckDuckGoSearchRun()
 
-# Create agents
 class TravelAgents:
     def __init__(self):
         self.planner = Agent(
@@ -35,7 +34,6 @@ class TravelAgents:
             allow_delegation=False
         )
 
-# Create tasks
 class TravelTasks:
     def __init__(self, origin, destination, travel_date, preferences):
         self.origin = origin
@@ -132,7 +130,7 @@ class TravelCrew:
 
 # CLI Interface
 def main():
-    print("\n Travel AI Planner 🗺️")
+    print("\n Travel AI Planner ")
     print("I'll help you plan your trip from anywhere to anywhere!\n")
     
     origin = input("Where are you traveling from? ")
