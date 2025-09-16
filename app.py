@@ -148,3 +148,8 @@ if submitted:
         st.markdown(str(result))  # Display as markdown
     except Exception as e:
         st.error(f"⚠️ Error: {e}")
+
+
+
+#run= streamlit run app.py
+
