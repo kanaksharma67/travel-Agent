@@ -159,5 +159,5 @@ if __name__ == "__main__":
     main()
 
 
+#pip install crewai langchain langchain-google-genai duckduckgo-search
 
-#pip install crewai langchain_community duckduckgo-search google-generativeai python-dotenv
