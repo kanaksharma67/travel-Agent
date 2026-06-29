@@ -178,7 +178,7 @@ class TravelCrew:
         return crew.kickoff()
 
 # ----------------- Streamlit UI -----------------
-st.title("🌍 Travel AI Planner with Gemini")
+st.title(" Travel AI Planner with Gemini")
 st.markdown("Plan your trip with AI-powered travel agents using Google Gemini!")
 
 # API key input (optional - you can set it in secrets or environment variables)
@@ -200,7 +200,7 @@ with st.form("travel_form"):
     travel_date = st.text_input("When are you traveling? (YYYY-MM-DD or 'soon')")
     preferences = st.text_area("Any preferences? (budget, luxury, scenic, etc.)")
     
-    submitted = st.form_submit_button("Plan My Trip ✈️")
+    submitted = st.form_submit_button("Plan My Trip ")
 
 if submitted:
     if not origin or not destination:
@@ -216,8 +216,8 @@ if submitted:
             crew = TravelCrew(origin, destination, travel_date, preferences)
             result = crew.run()
             
-            st.success("✅ Your travel plan is ready!")
-            st.markdown("### 📌 Complete Itinerary")
+            st.success(" Your travel plan is ready!")
+            st.markdown("###  Complete Itinerary")
             st.markdown(str(result))  # Display as markdown
         except Exception as e:
-            st.error(f"⚠️ Error: {e}")
+            st.error(f" Error: {e}")
